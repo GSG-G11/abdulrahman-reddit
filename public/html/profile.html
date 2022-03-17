@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/profile.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/"
+        ><img src="../assets/Reddit-Logo.png" alt="Reddit-Logo" width="200px"
+      /></a>
+      <div class="searchContent">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="search" />
+      </div>
+
+
+      <div class="register">
+        <input type="submit" class="logOutBtn" value="Log Out" />
+        <a href="/home"><i class="fa-solid fa-home"></i></a>
+        
+        <div class="username"></div>
+      </div>
+   
+    </div>
+    </nav>
+    <div class="container">
+      <section class="insert-post">
+        <form id="post-form">
+          <img class="reddit-logo" src="../assets/4333097.jpg" alt="logo" />
+          <input
+            class="post-input"
+            type="text"
+            placeholder="Create Post"
+            required
+          />
+          <input
+            class="img-input"
+            type="url"
+            placeholder="Add  URL "
+            required
+          />
+          <button class="post-btn">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </section>
+      <div class="popular-posts">
+        <h3 class="title">Posts</h3>
+        <!-- left Side -->
+        <div class="posts">
+
+        </div>
+        <div class="right-side"></div>
+    </div>
+    
+  </body>
+  <script src="../js/renderProfile.js"></script>
+</html>
