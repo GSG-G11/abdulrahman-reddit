@@ -2,7 +2,6 @@ const posts = document.querySelector('.posts');
 const postForm = document.querySelector('#post-form');
 const postInput = document.querySelector('.post-input');
 const imgInput = document.querySelector('.img-input');
-const logOutBtn = document.querySelector('.logOutBtn');
 const r = document.querySelector('.right-side');
 const render = (data) => {
   data.forEach((i) => {
@@ -60,8 +59,8 @@ const render = (data) => {
     postContent.appendChild(deleteBtn);
     post.appendChild(postContent);
 
-    deleteBtn.addEventListener('click', (e) => {
-      const { id } = e.target;
+    deleteBtn.addEventListener('click', () => {
+      const { id } = deleteBtn;
       fetch(`/delete/${id}`, { method: 'delete' }).then(() => postContainer.remove());
     });
   });
