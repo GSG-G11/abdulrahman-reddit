@@ -1,9 +1,7 @@
 const loginForm = document.getElementById('loginForm');
 const emailInput = document.getElementById('emailInput');
 const passInput = document.getElementById('passwordInput');
-// const loginBtn = document.querySelector('.loginBtn');
 const errorMsg = document.querySelector('.errorMsg');
-// const logoutBtn = document.querySelector('.logoutBtn');
 loginForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const data = {

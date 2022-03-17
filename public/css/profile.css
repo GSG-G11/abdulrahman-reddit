@@ -248,3 +248,20 @@ nav {
   border: 1px solid #1384d7;
   border-radius: 5px;
 }
+
+.deleteBtn {
+  padding: 5px 10px;
+  width: 50px;
+  background-color: white;
+  color: #000000;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.fa-trash {
+  content: "\f1f8";
+  font-size: 25px;
+}
+.fa-trash:hover {
+color: red;
+}

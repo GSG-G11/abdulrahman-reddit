@@ -2,7 +2,6 @@ const posts = document.querySelector('.posts');
 const postForm = document.querySelector('#post-form');
 const postInput = document.querySelector('.post-input');
 const imgInput = document.querySelector('.img-input');
-const r = document.querySelector('.right-side');
 const render = (data) => {
   data.forEach((i) => {
     const postContainer = document.createElement('div');
@@ -54,6 +53,7 @@ const render = (data) => {
     posts.appendChild(postContainer);
 
     const deleteBtn = document.createElement('button');
+    deleteBtn.setAttribute('class', 'deleteBtn');
     deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
     deleteBtn.id = i.id;
     postContent.appendChild(deleteBtn);
@@ -65,10 +65,6 @@ const render = (data) => {
     });
   });
 };
-logOutBtn.addEventListener('click', () => {
-  document.cookie = 'token=; exires=Thu, 01 Jan 1970 00:00:01 GMT';
-  window.location.assign('/');
-});
 
 postForm.addEventListener('submit', (e) => {
   e.preventDefault();
