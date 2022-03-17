@@ -19,11 +19,11 @@ CREATE TABLE post (
   userId INT NOT NULL,
   FOREIGN KEY (userId) REFERENCES users(id)
 );
-CREATE TABLE comment (
+CREATE TABLE votes_post (
   id SERIAL  PRIMARY KEY,
-  comment TEXT NOT NULL,
-  commentTime DATE,
-  votes INT,
+  votes BIT,
+  vote_up INT,
+  vote_down INT,
   userId INT NOT NULL,
   postId INT NOT NULL,
   FOREIGN KEY (userId) REFERENCES users(id),

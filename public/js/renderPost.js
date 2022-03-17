@@ -3,7 +3,7 @@ const posts = document.querySelector('.posts');
 const postForm = document.querySelector('#post-form');
 const postInput = document.querySelector('.post-input');
 const imgInput = document.querySelector('.img-input');
-const logOutBtn = document.querySelector('.logOutBtn');
+
 const username = document.querySelector('.username');
 const render = (data) => {
   data.forEach((i) => {
@@ -56,11 +56,7 @@ const render = (data) => {
     posts.appendChild(postContainer);
   });
 };
-/// /////////////////////////////////////////////////////////////////////
-logOutBtn.addEventListener('click', () => {
-  document.cookie = 'token=; exires=Thu, 01 Jan 1970 00:00:01 GMT';
-  window.location.assign('/');
-});
+/ /;/// /////////////////////////////////////////////////////////////////
 
 fetch(
   '/allPost',
@@ -88,3 +84,12 @@ postForm.addEventListener('submit', (e) => {
 fetch('/displayUserName').then((res) => res.json()).then((data) => {
   username.textContent = `Hello ${data.name}`;
 });
+
+
+// fetch(
+//   '/allPost',
+//   {
+//     method: 'get',
+//     headers: { 'Content-Type': 'application/json' },
+//   },
+// ).then((res) => res.json()).then((data) => render(data));

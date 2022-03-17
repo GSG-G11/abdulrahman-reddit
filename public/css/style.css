@@ -113,7 +113,7 @@ nav {
   width: 225px;
   height: 180px;
   background-color: #e21a1a;
-  background-image: url(../assets/aaaa.jpg);
+  /* background-image: url(https://pbs.twimg.com/media/FN-qBB1WYAErkJD?format=jpg&name=4096x4096); */
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5px 10px;
@@ -121,6 +121,18 @@ nav {
   font-size: 12px;
   border-radius: 5px;
   margin: 5px 10px;
+}
+.cards .card1{
+  background-image: url(https://pbs.twimg.com/media/FN-qBB1WYAErkJD?format=jpg&name=4096x4096);
+}
+.cards .card2{
+  background-image: url(https://images.unsplash.com/photo-1647470716736-9c54281a6775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+}
+.cards .card3{
+  background-image: url(https://media.istockphoto.com/photos/wardamaged-building-in-sloviansk-ukraine-picture-id492989762?s=612x612);
+}
+.cards .card4{
+  background-image: url(https://media.istockphoto.com/photos/razor-wire-and-soldiers-picture-id122292316?s=612x612);
 }
 .cards .card .title {
   font-size: 18px;

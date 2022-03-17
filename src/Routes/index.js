@@ -18,7 +18,6 @@ const { auth } = require('../utils/middleware');
 router.get('/api/v1/login', (req, res) => {
   res.send('<h1>Hello World</h1>');
 });
-// router.post('/signup', signUp, getSignUp);
 
 router.route('/signUp').post(signUp).get(auth, getSignUp);
 

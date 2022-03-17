@@ -1,7 +1,7 @@
 const { join } = require('path');
-const { verify } = require('jsonwebtoken');
 
-const getProfilePage = (req, res, next) => {
+const getProfilePage = (req, res) => {
+  if (!req.id) res.redirect('/login');
   res.sendFile(join(__dirname, '..', '..', 'public', 'html', 'profile.html'));
 };
 
